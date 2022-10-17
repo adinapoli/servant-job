@@ -19,7 +19,10 @@ module Servant.Job.Async
   , AsyncJobAPI'
   , AsyncJobsAPI
   , AsyncJobsAPI'
+  , AsyncJobServerT
   , AsyncJobsServer
+  , AsyncJobsServerT
+  , AsyncJobsServerT'
   , MonadAsyncJobs
   , MonadAsyncJobs'
 
@@ -28,6 +31,7 @@ module Servant.Job.Async
   , job_id
   , job_log
   , job_status
+  , jobStatus
 
   , JobInput(JobInput)
   , job_input
@@ -69,7 +73,7 @@ module Servant.Job.Async
   , Safety(..)
 
   -- Internals
-  , Job
+  , Job(..)
   , job_async
   , deleteJob
   , checkID

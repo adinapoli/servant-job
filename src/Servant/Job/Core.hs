@@ -11,7 +11,7 @@
 {-# LANGUAGE TypeFamilies #-}
 module Servant.Job.Core
   -- Essentials
-  ( ID
+  ( ID(..)
   , id_type
   , id_number
   , id_time
@@ -51,12 +51,14 @@ module Servant.Job.Core
 
   -- Internals
   , checkID
+  , macID
   , newItem
   , getItem
   , deleteItem
   , isValidItem
   , forgetID
   , mkID
+  , newID
   , defaultDuration
   )
   where
