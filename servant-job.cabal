@@ -53,11 +53,11 @@ library
     , monad-control
     , mtl
     , scientific
-    , servant >=0.16
-    , servant-client >=0.16
-    , servant-client-core >=0.16
+    , servant >=0.18.2 && < 0.22
+    , servant-client >=0.18.2 && < 0.22
+    , servant-client-core >=0.18.2 && < 0.22
     , servant-flatten
-    , servant-server >=0.16
+    , servant-server >=0.18.2 && < 0.22
     , servant-swagger >=1.1.5
     , split
     , swagger2
